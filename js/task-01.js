@@ -1,5 +1,4 @@
 // Кількість елементів
-const categories = document.querySelector('#categories');
 const allItems = document.querySelectorAll('.item');
 
 function totalCategories (allItems) {
@@ -8,3 +7,8 @@ function totalCategories (allItems) {
 totalCategories(allItems);
 
 // 
+allItems.forEach(item => {
+    // console.log(`Number of categories: ${allItems.length}`)
+    console.log(`Category: ${item.firstElementChild.textContent}`)
+    console.log(`Elements: ${item.lastElementChild.children.length}`)
+})
