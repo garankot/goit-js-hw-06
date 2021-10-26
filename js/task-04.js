@@ -8,6 +8,7 @@ const decrementValue = () => {
   counterValue -= 1;
   return (spanValue.textContent = counterValue);
 };
+
 btnDecrement.addEventListener('click', decrementValue);
 
 const incrementValue = () => {
