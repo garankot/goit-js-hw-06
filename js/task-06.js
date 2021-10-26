@@ -6,7 +6,7 @@ const validationInput = () => {
 
   if (textInput.value.length === dataLength) {
     textInput.classList.add('valid');
-    textInput.classList.replace('invalid', 'valid');
+    textInput.classList.remove('invalid');
   }
 };
 
